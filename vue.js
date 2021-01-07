@@ -58,6 +58,9 @@ const App = {
     },
   },
   computed: {
+    currentStep() {
+      return this.steps[this.activeIndex]
+    },
     isFirstStep() {
       return this.activeIndex === 0
     },
